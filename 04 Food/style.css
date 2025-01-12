@@ -1,0 +1,358 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+nav{
+    padding: 2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+background-color: black;
+z-index: 99;
+}
+
+nav>a{
+    font-size: 2rem;
+text-decoration: none;
+color: red;
+}
+
+.navleft>a{
+    margin-left: 2rem;
+        font-size: 2rem;
+    text-decoration: none;
+    color: red;
+
+}
+
+.navleft>button{
+width: 10rem;
+height: 3rem;
+margin-left: 2rem;
+font-size: 1rem;
+text-transform: uppercase;
+font-weight: 600;
+border: 0px;
+background-color: darkgrey;
+
+border-radius: 25px;
+}
+
+
+.hero{
+    
+    width: 100%;
+    height: 92%;
+    display: flex;
+/* align-items: end; */
+justify-content: space-between;
+    /* background-color: aquamarine; */
+
+}
+
+
+.left{
+    width:70%;
+    height: 100%;
+/* background-color: aqua; */
+display: flex;
+
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+justify-content: center;
+
+
+animation: mover 2s linear ;
+}
+
+
+.left>h1{
+font-size: 5rem;
+text-transform: uppercase ;
+}
+
+
+.left>p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.btn{
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(253, 120, 72);
+    /* place-content: center; */
+    border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+
+
+.btn:hover{
+transform: translateY(-5px);
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,.3);
+}
+
+.btn1{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 5px;
+    background-color: rgb(201, 199, 218);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.btn1:hover{
+    transition: 1s ;
+rotate: 90deg;
+}  
+
+
+.btn1>i{
+    font-size: 1.8rem;
+}
+
+.btn>span{
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+
+
+.right{
+    width: 30%;
+    height: 100%;
+background-color: bisque;
+border-top-left-radius: 70%;
+border-bottom-left-radius: 70%;
+}
+
+
+.dish{
+    width: 50rem;
+    height: 50rem;
+    
+    background: url(pngwing.com.png);
+    background-size: cover;
+    background-position: center;
+    
+    transform: translateX(-350px ) translateY(150px );
+    animation: dish 1.5s linear;
+    overflow: hidden;
+}
+
+
+@keyframes mover {
+   0%{
+        transform: translateY(-250px);
+        opacity: 0;
+        }
+50%{
+/* transform: translateY(-250px); */
+opacity: 0;
+}
+100%{
+    /* transform: translateY(-150px); */
+    opacity: 1;
+    }
+
+}
+
+@keyframes dish {
+   0%{
+        transform: translateY(250px);
+        opacity: 0;
+
+        }
+50%{
+/* transform: translateY(-250px); */
+opacity: 0;
+}
+100%{
+    /* transform: translateY(-150px); */
+    opacity: 1;
+    rotate: 360deg;
+    }
+
+}
+
+
+
+
+
+
+.page2{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr ;
+}
+
+
+.menu{
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 20px;
+background-color: aqua;
+display: flex;
+align-items:  center;
+justify-content: center;
+}
+
+.page2btn{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+text-transform: uppercase;
+background-color: rgb(250, 235, 215,.7);
+backdrop-filter: blur(50px);
+
+font-size: 1.2rem;
+font-weight: 500;
+}
+
+.menu1{
+    background-image: linear-gradient(rgb(0, 0, 0,.2) , rgb(0, 0, 0,.2)), url(https://images.pexels.com/photos/18852576/pexels-photo-18852576/free-photo-of-delicious-meal-with-meat-and-vegetables.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: contain;
+    background-position: center;
+}
+
+.menu2{
+    background-image: url(https://images.pexels.com/photos/8084660/pexels-photo-8084660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: contain;
+    /* object-fit: contain; */
+    background-position: center;
+}
+.menu3{
+    background-image: url(https://images.pexels.com/photos/5779173/pexels-photo-5779173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: contain;
+    /* object-fit: contain; */
+    background-position: center;
+}
+
+.menu4{
+    background-image: url(https://images.unsplash.com/photo-1590877915250-b68047f78d16?q=80&w=2005&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: contain;
+    /* object-fit: contain; */
+    background-position: center;
+}
+
+.page3{
+    width: 100%;
+    height: 70%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+
+.rev{
+    width: 40rem;
+    height: 20rem;
+    background-color: bisque;
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-radius: 25px;
+}
+
+
+
+.rev1>.img{
+    width: 15rem;
+    height: 18rem;
+    background: url(https://images.unsplash.com/photo-1685651523477-7a67c62d00b0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGltZ3xlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+
+
+.rev2>.img{
+    width: 15rem;
+    height: 18rem;
+    background: url(https://images.unsplash.com/photo-1648183185045-7a5592e66e9c?q=80&w=2042&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.rev3>.img{
+    width: 15rem;
+    height: 18rem;
+    background: url(https://plus.unsplash.com/premium_photo-1690395794791-e85944b25c0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.foot{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.footer{
+width: 30%;
+height: 100%;
+/* background-color: beige; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+
+}
+
+.footer>a{
+    text-decoration: none;
+    font-size: 2rem;
+color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,364 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+.root{
+    width: 100%;
+    height: 100%;
+    /* background:url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+/* background-size: cover; */
+/* object-fit: cover;  */
+/* background-position: center; */
+
+}
+
+
+.page1{
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+justify-content: space-evenly;
+gap: 2rem;
+}
+
+
+nav>a{
+text-decoration: none;
+margin-top: 1rem;
+    font-size: 1.5rem;
+text-transform: uppercase;
+color: wheat;
+}
+
+
+nav>a::after{
+content: "";
+/* max-width: 200px;
+height: 2px; */
+
+display: flex;
+align-items: center;
+border-bottom: 2px solid white;
+}
+
+nav>a:hover::after{
+    animation-name: navanime;
+    animation-duration: 1.5s;
+    animation-timing-function: liner;
+}
+
+@keyframes navanime {
+    0%{
+        max-width: 0px;
+        border-bottom: 2px solid wheat ;
+    }
+    100%{
+        max-width: 100px;
+        border-bottom: 2px solid skyblue;
+        
+    }
+    
+}
+
+nav>a:hover{
+    color: skyblue;
+    border-bottom: ;
+}
+
+.mid{
+    margin-top: 15rem;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.midright{
+    width: 50%;
+    height: 100%;
+    color: wheat;
+/* background-color: aqua; */
+}
+
+.midright>h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+    align-items: end;
+    
+}
+
+.midright>p{
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    word-spacing: .2rem;
+
+}
+
+
+.page1>.bottom{
+    width: 100%;
+    height: 20%;
+display: flex;
+justify-content: center;
+
+}
+
+.bottom>.search{
+    border-radius: 25px;
+    width: 70%;
+    height: 15rem;
+background-color: antiquewhite;
+display: flex;
+justify-content: space-evenly;
+}
+
+
+
+.searchleft , .searchmid,.searchright {
+    height: 15rem;
+    max-width: 200px;
+
+    display: flex;
+align-items: center;
+justify-content: center;
+place-content: center;
+flex-direction: row;
+}
+
+
+.ic{
+    font-size: 2rem;
+}
+
+
+.searchleft>.des{
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+
+
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(208, 141, 141);
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: space-around;
+
+}
+
+
+
+
+.box1{
+    width: 20%;
+    height: 95%;
+    background-color: rgba(65, 55, 55, 0.562);
+    /* border: 5px solid gray; */
+    display: flex;
+    backdrop-filter: blur(7px);
+    align-items: center;
+    border-radius: 25px;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.ig1,.ig2,.ig3,.ig4{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 25px;
+}
+
+
+.ig1{
+    background: url(https://i0.wp.com/cityevent.in/wp-content/uploads/2024/12/plannet-mars-2.0-scaled.jpg?w=800&ssl=1);
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.ig2{
+    background: url(https://i0.wp.com/cityevent.in/wp-content/uploads/2024/12/image.jpg?w=800&ssl=1);
+/* object-fit: cover; */
+    background-position: center;
+    background-size: cover;
+}
+
+
+.ig3{
+    background: url(https://i0.wp.com/cityevent.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-25-at-2.08.26-PM-3.jpeg?w=800&ssl=1);
+
+    background-position: center;
+    background-size: cover;
+}
+
+.ig4{
+    
+    background-position: center;
+    background-size: cover;
+    background: url(https://i0.wp.com/cityevent.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-24-at-12.50.25-PM-2-1.jpeg?w=800&ssl=1);
+}
+
+.at1>p{
+    color: wheat;
+}
+.at2>p{
+    color: wheat;
+}
+.at3>p{
+    color: wheat;
+}
+
+
+
+.ck1{
+    width: 300px;
+    height: 2rem;
+    background-color: wheat;
+}
+
+.ck2{
+    width: 200px;
+    height: 2rem;
+    background-color: rgb(144, 109, 43);
+}
+
+.ck3{
+    width: 250px;
+    height: 2rem;
+    background-color: rgb(6, 312, 5);
+}
+
+
+.page3{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(208, 141, 141);
+}
+
+
+.last{
+    width: 100%;
+    height: 90%;
+    /* background-color: saddlebrown;  */
+
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+/* justify-content: space-around; */
+align-items: center;
+}
+
+.desc>h2{
+    font-size: 3rem;
+}
+
+.desc>p{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+
+}
+
+
+.desc>button{
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+.coming{
+width: 25rem;
+height: 30rem;
+}
+
+.com1{
+background: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA1IEphbg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00362152-tqaggcmswa-portrait.jpg);
+background-size: contain;
+background-position: center;
+}
+.com2{
+background: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAzIEphbiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00135711-eppyfgqmzv-portrait.jpg);
+background-size: contain;
+background-position: center;
+}
+.com3{
+background: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNyBKYW4gb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00312421-mzmjfachrd-portrait.jpg);
+/* object-fit: cover;     */
+background-size: contain;
+background-position: center;
+}
+.com4{
+background:url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAzMSBEZWMgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00346481-bwghpuqcch-portrait.jpg);
+    /* object-fit: cover;     */
+background-size: contain;
+background-position: center;
+}
+
+.coming:hover{
+    scale: 1.1;
+
+}
+
+
+
+.fot{
+    width: 100%;
+    height: 10%;
+    /* background-color: aqua; */
+}
+
+
+.links{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+/* background-color: aqua; */
+}
+
+
+.links>a{
+    text-decoration: none;
+width: 5rem ;
+height: 5rem;
+border-radius: 50%;
+background-color: blanchedalmond;
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+i{
+color: black;
+font-size: 2rem;
+}
+
+

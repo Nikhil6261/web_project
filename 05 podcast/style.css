@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+}
+
+html {
+            scroll-behavior: smooth;
+}
+
+header {
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+}
+
+header h1 {
+            font-family: "Dancing Script", serif;
+            font-size: 2rem;
+            margin-left: 20px;
+}
+
+nav {
+            margin-right: 20px;
+}
+
+nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+}
+
+nav a:hover {
+            color: #ccc;
+}
+
+main {
+            padding-top: 70px;
+}
+
+section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+}
+
+#home {
+            background-image: url('https://images.unsplash.com/photo-1556761175-129418cb2dfe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            color: #fff;
+}
+
+#home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+}
+
+#home h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            z-index: 2;
+            position: relative;
+}
+
+#home p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 20px auto;
+            z-index: 2;
+            position: relative;
+}
+
+#home .cta {
+            margin-top: 20px;
+            z-index: 2;
+            position: relative;
+}
+
+#home .cta a {
+            text-decoration: none;
+            background-color: #f5f5f5;
+            color: #000000;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+}
+
+#home .cta a:hover {
+            background-color: #000000;
+            color: white;
+}
+
+#episodes {
+            background-color: #000;
+            color: #fff;
+}
+
+#episodes .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+}
+
+.card {
+            background-color: #1a1a1a;
+            border: 1px solid #9D2825;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: calc(33% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+}
+
+.card img {
+            width: 100%;
+            border-radius: 10px;
+}
+
+.card h3 {
+            font-family: 'Oswald', sans-serif;
+            color: #9D2825;
+            margin-top: 10px;
+}
+
+#subscribe {
+            background-color: white;
+            color: black;
+}
+
+#subscribe form {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+}
+
+#subscribe input {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            width: 250px;
+            /* Adjust width as needed */
+}
+
+#subscribe button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+}
+
+#subscribe button:hover {
+            background-color: #0056b3;
+}
+
+#subscribe .social-icons a {
+            margin: 0 10px;
+            font-size: 20px;
+            color: #555;
+}
+
+#subscribe .social-icons a:hover {
+            color: #007BFF;
+}
+
+
+#categories {
+            display: block;
+            background-color: white;
+            color: #fff;
+            /* padding: 50px 20px; */
+            text-align: center;
+}
+
+#categories h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #000000;
+}
+
+.categories-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+}
+
+.category-card {
+            background-color: #333;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 150px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+}
+
+.category-card:hover {
+            background-color: #9D2825;
+            transform: scale(1.05);
+}
+
+.category-card {
+            width: 200px;
+            height: 100px;
+            background-color: #0b0101;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+}
+
+.cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 15px;
+}
+
+
+
+.category-card {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+            color: rgb(255, 255, 255);
+            border-radius: 8px;
+}
+
+.category-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+}
+
+.category-card p {
+            position: absolute;
+            z-index: 2;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.category-card.technology {
+            background-image: url('https://images.unsplash.com/photo-1597218041286-e8b6048d48c4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.health-wellness {
+            background-image: url('https://plus.unsplash.com/premium_photo-1667762241847-37471e8c8bc0?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.business {
+            background-image: url('https://plus.unsplash.com/premium_photo-1661764256397-af154e87b1b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.education {
+            background-image: url('https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.entertainment {
+            background-image: url('https://plus.unsplash.com/premium_photo-1682401101972-5dc0756ece88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.science {
+            background-image: url('https://plus.unsplash.com/premium_photo-1682401101972-5dc0756ece88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.travel {
+            background-image: url('https://plus.unsplash.com/premium_photo-1719843013722-c2f4d69db940?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.sports {
+            background-image: url('https://plus.unsplash.com/premium_photo-1685303469251-4ee0ea014bb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.lifestyle {
+            background-image: url('https://images.unsplash.com/photo-1531347387918-af516d1e939c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.category-card.music {
+            background-image: url('https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#about {
+            background-color: #000000;
+            padding: 50px 20px;
+            text-align: center;
+}
+
+#about h2 {
+            color: #ffffff;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+}
+
+#about p {
+            color: white;
+}
+
+.about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+}
+
+.about-text {
+            max-width: 500px;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+}
+
+.about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
